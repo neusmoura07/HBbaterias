@@ -7,8 +7,28 @@
     <title>HB Baterias</title>
 </head>
 <body>
-    <h1 class="text-3xl font-bold underline">
-        Hello world!
-      </h1>
+    <header class="w-full bg-[#202992] fixed flex justify-around items-center py-3 text-white">
+        <a href="#test1"> IMAGEM HB</a>
+        <button class="px-6 py-1 bg-[#FCEE05] rounded drop-shadow-[5px_7px_5px_rgba(0,0,0,0.50)] text-[#202992]">Peça Agora!</button>
+        <nav class="hidden sm:flex justify-around items-center gap-8">
+            <a href="#test2"> QUEM SOMOS?</a>
+            <a href="#test3"> COMO FUNCIONA??</a>
+            <h1>CONTATOS</h1>
+        </nav>
+    </header>
+    <div class="h-[100vh] pt-14 flex justify-center" id="test1"> test 1</div>
+    <div class="h-[100vh] pt-14 flex justify-center" id="test2">test 2</div>
+    <div class="h-[100vh] pt-14 flex justify-center" id="test3"> test 3</div>
 </body>
+<script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+</script>
 </html>
