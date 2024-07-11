@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./output.css" rel="stylesheet">
+    <link href="./input.css" rel="stylesheet">
     <title>HB Baterias</title>
 </head>
-<body>
+<body class="bg-black">
     <header class="w-full bg-[#202992] fixed flex justify-around items-center py-3 text-white">
-        <a href="#test1"> IMAGEM HB</a>
+        <a href="#test1"><img src="/assets/logo_header.png" alt="" class="w-28"></a>
         <button class="px-6 py-1 bg-[#FCEE05] rounded drop-shadow-[5px_7px_5px_rgba(0,0,0,0.50)] text-[#202992]">Peça Agora!</button>
         <nav class="hidden sm:flex justify-around items-center gap-8">
             <a href="#test2"> QUEM SOMOS?</a>
@@ -16,9 +17,11 @@
             <h1>CONTATOS</h1>
         </nav>
     </header>
-    <div class="h-[100vh] pt-14 flex justify-center" id="test1"> test 1</div>
-    <div class="h-[100vh] pt-14 flex justify-center" id="test2">test 2</div>
-    <div class="h-[100vh] pt-14 flex justify-center" id="test3"> test 3</div>
+    <div class="bg-[url('/assets/home_img.jpg')]">
+    
+      </div>
+    <div class="h-[100vh] pt-14 flex justify-center text-white" id="test2">test 2</div>
+    <div class="h-[100vh] pt-14 flex justify-center text-white" id="test3"> test 3</div>
 </body>
 <script>
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
