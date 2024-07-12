@@ -1,37 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./output.css" rel="stylesheet">
     <link href="./input.css" rel="stylesheet">
+    <link href="./fonts/fonts.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <title>HB Baterias</title>
 </head>
-<body class="bg-black">
+
+<body>
     <header class="w-full bg-[#202992] fixed flex justify-around items-center py-3 text-white">
         <a href="#test1"><img src="/assets/logo_header.png" alt="" class="w-28"></a>
-        <button class="px-6 py-1 bg-[#FCEE05] rounded drop-shadow-[5px_7px_5px_rgba(0,0,0,0.50)] text-[#202992]">Peça Agora!</button>
+        <button class="px-6 py-1 bg-[#FCEE05] rounded drop-shadow-[5px_7px_5px_rgba(0,0,0,0.50)] text-[#202992]">Peça
+            Agora!</button>
         <nav class="hidden sm:flex justify-around items-center gap-8">
             <a href="#test2"> QUEM SOMOS?</a>
             <a href="#test3"> COMO FUNCIONA??</a>
             <h1>CONTATOS</h1>
         </nav>
     </header>
-    <div class="bg-[url('/assets/home_img.jpg')]">
-    
-      </div>
+
+    <section class="flex flex-col min h-screen bg-slate-800 text-white bg-center bg-cover  " id="test1"
+        style="background-image: url('https://img.freepik.com/free-photo/repair-man-making-car-service_1303-26864.jpg?t=st=1720727741~exp=1720731341~hmac=1637c368d196122e9da6669b054849441935cb6f68dac73db23f5020039dbf57&w=1380') ;">
+        <div class="flex w-full h-full items-center">
+            <div class="flex flex-col items-center justify-center m-auto text-center lg:m-0 lg:pl-20 gap-2">
+                <img class="w-[295px] h-[136.67px] lg:w-auto lg:h-auto" src="/assets/logo_header.png" alt="">
+                <h2 class="text-2xl font-bold md:text-4xl text-stroke-3 text-[#FCEE05]" style="font-family: barlow;">Satisfação em vender Barato!</h2>
+                <h2 class="text-2xl font-bold md:text-3xl text-stroke-3 text-[#FCEE05]" style="font-family: barlow;">Em até 10x sem juros.</h2>
+                <button
+                    class="px-6 py-1 h-12 w-48 font-bold bg-[#FCEE05] rounded drop-shadow-[5px_7px_5px_rgba(0,0,0,0.50)] text-[#202992] mt-6 text-2xl hover:bg-[#202992] hover:text-[#FCEE05] duration-500" style="font-family:Roboto Condensed;">Peça
+                    Agora!</button>
+            </div>
+        </div>
+    </section>
+
     <div class="h-[100vh] pt-14 flex justify-center text-white" id="test2">test 2</div>
-    <div class="h-[100vh] pt-14 flex justify-center text-white" id="test3"> test 3</div>
+    <div class="h-[100vh] pt-14 flex justify-center text-white" id="test3">test 3</div>
 </body>
 <script>
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
         });
     });
-});
 </script>
+
 </html>
