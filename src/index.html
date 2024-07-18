@@ -2,19 +2,19 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./output.css" rel="stylesheet">
-    <link href="./input.css" rel="stylesheet">
-    <link href="./fonts/fonts.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link href="./input.css" rel="stylesheet">
+  <link href="./fonts/fonts.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
   <style>
     .slick-slide img {
@@ -26,11 +26,11 @@
     .card {
       height: 185px !important;
       width: 185px !important;
-      
+
     }
 
     @media (min-width: 1024px) {
-      .card{
+      .card {
         height: 210px !important;
         width: 300px !important;
       }
@@ -41,70 +41,95 @@
       margin: 0 auto;
       padding: 0 auto;
     }
-
-
-
   </style>
-    <title>HB Baterias</title>
-    
+  <title>HB Baterias</title>
+
 </head>
 
-<body> 
-    <header class="w-full bg-[#202992] fixed flex justify-evenly items-center py-4 text-white border-b-2 border-[#FCEE05] z-50">
-        <a href="#test1"><img src="/assets/logo_header.png" alt="" class="w-28 drop-shadow-[5px_7px_5px_rgba(0,0,0,0.50)]"></a>
-        <button class="px-6 py-1 bg-[#FCEE05] rounded drop-shadow-[5px_7px_5px_rgba(0,0,0,0.50)] text-[#202992] text-xl font-bold" style="font-family: Roboto Condensed;">Peça Agora!</button>
-        <nav class="hidden sm:flex justify-around items-center gap-10 text-xl" style="font-family: Roboto Condensed;">
-            <a href="#test2">Como Funciona?</a>
-            <a href="#test3">Quem Somos?</a>
-            <a href="#test3">Contatos</a>
-        </nav>
-    </header>
+<body>
+  <header
+    class="w-full bg-[#202992] fixed flex justify-evenly items-center py-4 text-white border-b-2 border-[#FCEE05] z-50">
+    <a href="#test1"><img src="/assets/logo_header.png" alt=""
+        class="w-28 drop-shadow-[5px_7px_5px_rgba(0,0,0,0.50)]"></a>
+    <button
+      class="px-6 py-1 bg-[#FCEE05] rounded drop-shadow-[5px_7px_5px_rgba(0,0,0,0.50)] text-[#202992] text-xl font-bold"
+      style="font-family: Roboto Condensed;">Peça Agora!</button>
+    <nav class="hidden sm:flex justify-around items-center gap-10 text-xl" style="font-family: Roboto Condensed;">
+      <a href="#test2">Como Funciona?</a>
+      <a href="#test3">Quem Somos?</a>
+      <a href="#test3">Contatos</a>
+    </nav>
+  </header>
 
-    <section class="flex flex-col min h-screen bg-slate-800 text-white bg-center bg-cover  " id="test1"
-        style="background-image: url('/assets/img_fundo.png') ;">
-        <div class="flex w-full h-full items-center">
-            <div class="flex flex-col items-center justify-center m-auto text-center lg:m-0 lg:pl-20 gap-2">
-                <img class="w-[295px] h-[136.67px] lg:w-auto lg:h-auto" src="/assets/logo_header.png" alt="">
-                <h2 class="text-2xl font-bold md:text-4xl text-stroke-3 text-[#FCEE05]" style="font-family: barlow;">Satisfação em vender Barato!</h2>
-                <h2 class="text-2xl font-bold md:text-3xl text-stroke-3 text-[#FCEE05]" style="font-family: barlow;">Em até 10x sem juros.</h2>
-                <button
-                    class="px-6 py-1 h-12 w-48 font-bold bg-[#FCEE05] rounded drop-shadow-[5px_7px_5px_rgba(0,0,0,0.50)] text-[#202992] mt-6 text-2xl hover:bg-[#202992] hover:text-[#FCEE05] duration-500 " style="font-family:Roboto Condensed;">Peça
-                    Agora!</button>
-            </div>
-        </div>
-    </section>
-    
-    <div class="flex bg-center items-center justify-center mt-11 lg:mx-16" >
-        <div class="bg-blue-900 p-8 w-full lg:rounded-xl">
-            <h2 class="text-white text-center mb-6 text-2xl font-bold lg:text-4xl lg:mb-10" style="font-family: Roboto Condensed;">Trabalhamos com as melhores marcas do mercado!</h2>
-            <div class="slider">
-              <div class="lg:p-0 p-4"><img src="/assets/heliar.png" alt="Heliar" class="bg-white rounded-xl h-[170px] w-[170px]"></div>
-              <div class="lg:p-0 p-4"><img src="/assets/moura.png" alt="Moura" class="bg-white rounded-xl h-[170px] w-[170px]"></div>
-              <div class="lg:p-0 p-4"><img src="/assets/jupiter.png" alt="Jupiter" class="bg-white rounded-xl h-[170px] w-[170px]"></div>
-              <div class="lg:p-0 p-4"><img src="/assets/tudor.png" alt="Tudor" class="bg-white rounded-xl h-[170px] w-[170px]"></div>
-              <div class="lg:p-0 p-4"><img src="/assets/zetta.png" alt="Zetta" class="bg-white rounded-xl h-[170px] w-[170px]"></div>
-            </div>
-          </div>
+  <section class="flex flex-col min h-screen bg-slate-800 text-white bg-center bg-cover  " id="test1"
+    style="background-image: url('/assets/img_fundo.png') ;">
+    <div class="flex w-full h-full items-center">
+      <div class="flex flex-col items-center justify-center m-auto text-center lg:m-0 lg:pl-20 gap-2">
+        <img class="w-[295px] h-[136.67px] lg:w-auto lg:h-auto" src="/assets/logo_header.png" alt="">
+        <h2 class="text-2xl font-bold md:text-4xl text-stroke-3 text-[#FCEE05]" style="font-family: barlow;">Satisfação
+          em vender Barato!</h2>
+        <h2 class="text-2xl font-bold md:text-3xl text-stroke-3 text-[#FCEE05]" style="font-family: barlow;">Em até 10x
+          sem juros.</h2>
+        <button
+          class="px-6 py-1 h-12 w-48 font-bold bg-[#FCEE05] rounded drop-shadow-[5px_7px_5px_rgba(0,0,0,0.50)] text-[#202992] mt-6 text-2xl hover:bg-[#202992] hover:text-[#FCEE05] duration-500 "
+          style="font-family:Roboto Condensed;">Peça
+          Agora!</button>
+      </div>
     </div>
+  </section>
+
+  <div class="flex bg-center items-center justify-center mt-11 lg:mx-16">
+    <div class="bg-blue-900 p-8 w-full lg:rounded-xl">
+      <h2 class="text-white text-center mb-6 text-2xl font-bold lg:text-4xl lg:mb-10"
+        style="font-family: Roboto Condensed;">Trabalhamos com as melhores marcas do mercado!</h2>
+      <div class="slider">
+        <div class="lg:p-0 p-4"><img src="/assets/heliar.png" alt="Heliar"
+            class="bg-white rounded-xl h-[170px] w-[170px]"></div>
+        <div class="lg:p-0 p-4"><img src="/assets/moura.png" alt="Moura"
+            class="bg-white rounded-xl h-[170px] w-[170px]"></div>
+        <div class="lg:p-0 p-4"><img src="/assets/jupiter.png" alt="Jupiter"
+            class="bg-white rounded-xl h-[170px] w-[170px]"></div>
+        <div class="lg:p-0 p-4"><img src="/assets/tudor.png" alt="Tudor"
+            class="bg-white rounded-xl h-[170px] w-[170px]"></div>
+        <div class="lg:p-0 p-4"><img src="/assets/zetta.png" alt="Zetta"
+            class="bg-white rounded-xl h-[170px] w-[170px]"></div>
+      </div>
+    </div>
+  </div>
 
   <div class="flex items-center flex-col gap-10 mt-10">
-    <h2 class="text-center text-2xl font-bold md:text-4xl" style="font-family: Roboto Condensed;">Como fazer meu pedido?</h2>
+    <h2 class="text-center text-2xl font-bold md:text-4xl" style="font-family: Roboto Condensed;">Como fazer meu pedido?
+    </h2>
     <div class="flex flex-col gap-14 lg:flex-row lg:gap-40">
-      <div class="border-4 border-[#202992] rounded-xl items-center flex flex-col justify-center p-5 gap-7 h-[224px] w-[300px] text-center"><img src="/assets/trafego 1.png" alt="" class="bg-white rounded-xl h-[50px] w-[50px]"><h2 class="text-[21px] font-semibold" style="font-family: Roboto Condensed;">Preencha os dados do seu 
-        veiculo</div>
-      <div class="border-4 border-[#202992] rounded-xl items-center flex flex-col justify-center p-5 gap-7 h-[224px] w-[300px] text-center"><img src="/assets/bate-papo (1) 1.png" alt="" class="bg-white rounded-xl h-[50px] w-[50px]"><h2 class="text-[21px] font-semibold" style="font-family: Roboto Condensed;">Finalize o pedido pelo 
-        nosso Whatsapp.</h2></div>
-      <div class="border-4 border-[#202992] rounded-xl items-center flex flex-col justify-center p-5 gap-7 h-[224px] w-[300px] text-center"><img src="/assets/entrega-rapida 1.png" alt="" class="bg-white rounded-xl h-[50px] w-[50px]"><h2 class="text-[21px] font-semibold" style="font-family: Roboto Condensed;">A HB Bateria vai até você 
-        com entrega e instalação 
-        grátis.</h2></div>
+      <div
+        class="border-4 border-[#202992] rounded-xl items-center flex flex-col justify-center p-5 gap-7 h-[224px] w-[300px] text-center">
+        <img src="/assets/trafego 1.png" alt="" class="bg-white rounded-xl h-[50px] w-[50px]">
+        <h2 class="text-[21px] font-semibold" style="font-family: Roboto Condensed;">Preencha os dados do seu
+          veiculo
+      </div>
+      <div
+        class="border-4 border-[#202992] rounded-xl items-center flex flex-col justify-center p-5 gap-7 h-[224px] w-[300px] text-center">
+        <img src="/assets/bate-papo (1) 1.png" alt="" class="bg-white rounded-xl h-[50px] w-[50px]">
+        <h2 class="text-[21px] font-semibold" style="font-family: Roboto Condensed;">Finalize o pedido pelo
+          nosso Whatsapp.</h2>
+      </div>
+      <div
+        class="border-4 border-[#202992] rounded-xl items-center flex flex-col justify-center p-5 gap-7 h-[224px] w-[300px] text-center">
+        <img src="/assets/entrega-rapida 1.png" alt="" class="bg-white rounded-xl h-[50px] w-[50px]">
+        <h2 class="text-[21px] font-semibold" style="font-family: Roboto Condensed;">A HB Bateria vai até você
+          com entrega e instalação
+          grátis.</h2>
+      </div>
     </div>
     <div class="m-0">
       <img src="/assets/celular.png" alt="">
-      <button class="px-6 py-1 h-12 w-52 font-bold bg-[#FCEE05] rounded drop-shadow-[5px_7px_5px_rgba(0,0,0,0.50)] text-[#202992] text-2xl hover:bg-[#202992] hover:text-[#FCEE05] duration-500 " style="font-family:Roboto Condensed;">Peça
-      Agora!</button>
+      <button
+        class="px-6 py-1 h-12 w-52 font-bold bg-[#FCEE05] rounded drop-shadow-[5px_7px_5px_rgba(0,0,0,0.50)] text-[#202992] text-2xl hover:bg-[#202992] hover:text-[#FCEE05] duration-500 "
+        style="font-family:Roboto Condensed;">Peça
+        Agora!</button>
     </div>
   </div>
-    
+
   </div>
 
 
@@ -112,19 +137,21 @@
   <div class=" p-10 flex justify-center text-black" id="test3"></div>
   <div class="mt-6 lg:mt-20">
     <h1 class="text-center text-3xl font-bold md:text-6xl" style="font-family: Roboto Condensed;">Quem Somos?</h1>
-    <div class="flex mx-auto max-w-6xl px-2 pt-16 md:pt-[125px] flex-col xl:flex-row gap-[60px] justify-center items-center xl:items-start">
-      <img src="/assets/IMG_4008.png" alt="" class="h-auto w-auto"> 
-      <div class="pt-10 text-[#3E3E3E] text-center text-[22px] lg:text-left lg:text-3xl" style="font-family: Roboto Condensed;">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-          sed do eiusmod tempor incididunt ut labore et dolore 
-          magna aliqua. Ut enim ad minim veniam, quis nostrud 
+    <div
+      class="flex mx-auto max-w-6xl px-2 pt-16 md:pt-[125px] flex-col xl:flex-row gap-[60px] justify-center items-center xl:items-start">
+      <img src="/assets/IMG_4008.png" alt="" class="h-auto w-auto">
+      <div class="pt-10 text-[#3E3E3E] text-center text-[22px] lg:text-left lg:text-3xl"
+        style="font-family: Roboto Condensed;">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud
           exercitation ullamco laboris nisi ut aliquip ex ea
           commodo consequat. Duis aute irure dolor in </p>
-        <p class="mt-7">reprehenderit in voluptate velit esse cillum dolore eu 
-          fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-          non proident, sunt in culpa qui officia deserunt mollit anim 
+        <p class="mt-7">reprehenderit in voluptate velit esse cillum dolore eu
+          fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+          non proident, sunt in culpa qui officia deserunt mollit anim
           id est laborum.</p>
-        </div>
+      </div>
     </div>
 
 
@@ -132,93 +159,115 @@
 
 
   <div class=" p-10 flex justify-center text-black" id="test2"></div>
-  <div class="flex flex-col bg-center items-center justify-center mt-14 lg:mx-16" >
-    <h2 class="text-black text-center mb-6 text-2xl font-bold lg:text-6xl lg:mb-10" style="font-family: Roboto Condensed;">Contatos</h2>
+  <div class="flex flex-col bg-center items-center justify-center mt-14 lg:mx-16">
+
+    <h2 class="text-black text-center mb-6 text-2xl font-bold lg:text-6xl lg:mb-10"
+      style="font-family: Roboto Condensed;">Contatos</h2>
+
     <div class="bg-white p-8 w-full lg:rounded-xl">
-        
-        <div class="contact-slider" style="font-family: Roboto Condensed;">
-          <div class="lg:p-0 p-4 text-center"><div class="card p-4 bg-white border-4 border-[#202992] rounded-3xl">
-            <div class="text-2xl mb-2"><img src="/assets/telefone 1.png" alt=""></div>
+
+      <div class="contact-slider" style="font-family: Roboto Condensed;">
+
+        <div class="lg:p-0 p-4 text-center">
+
+          <div class="card p-4 bg-white border-4 border-[#202992] rounded-3xl">
+
+            <div class="text-2xl mb-2"><img src="/assets/telefone 1.png" alt="">
+            
+            </div>
             <p class="pt-10 text-base lg:text-2xl">(82) 9 9999-9999</p>
             <p class="text-base lg:text-2xl">(82) 9 9999-9999</p>
-          </div></div>
-          <div class="lg:p-0 p-4 text-center"><div class="card p-4 bg-white border-4 border-[#202992] rounded-3xl">
+            
+          </div>
+        </div>
+
+        <div class="lg:p-0 p-4 text-center">
+          <div class="card p-4 bg-white border-4 border-[#202992] rounded-3xl">
             <div class="text-2xl mb-2"><img src="/assets/o-email 1.png" alt=""></div>
             <p class="pt-10 text-base lg:text-2xl">email@email.com</p>
-          </div></div>
-          <div class="lg:p-0 p-4 text-center"><div class="card p-4 bg-white border-4 border-[#202992] rounded-3xl">
+          </div>
+        </div>
+
+        <div class="lg:p-0 p-4 text-center">
+          <div class="card p-4 bg-white border-4 border-[#202992] rounded-3xl">
             <div class="text-2xl mb-2"><img src="/assets/midia-social 1.png" alt=""></div>
             <p class="pt-10 text-base lg:text-2xl">@HBBaterias</p>
-          </div></div>
+          </div>
+        </div>
+
       </div>
+
       <div class="mt-14 lg:mt-20">
-        <iframe class="w-full h-[500px] rounded-2xl" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3933.643603204444!2d-35.73484198858346!3d-9.625923201524662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x70145f7faabdacf%3A0x92a05d1910467380!2sHB%20BATERIAS%20LTDA!5e0!3m2!1spt-BR!2sbr!4v1721335185184!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <div class="flex items-center justify-center mt-8 md:mt-4" style="font-family:Roboto Condensed;"><img src="/assets/localizacao 1.png" alt=""><p class="text-center lg:text-lg">HB BATERIAS LTDA, Av. Mendonça Júnior, 654 - Gruta de Lourdes, Maceió - AL, 57052-480</p></div>
+        <iframe class="w-full h-[500px] rounded-2xl"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3933.643603204444!2d-35.73484198858346!3d-9.625923201524662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x70145f7faabdacf%3A0x92a05d1910467380!2sHB%20BATERIAS%20LTDA!5e0!3m2!1spt-BR!2sbr!4v1721335185184!5m2!1spt-BR!2sbr"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="flex items-center justify-center mt-8 md:mt-4" style="font-family:Roboto Condensed;"><img
+            src="/assets/localizacao 1.png" alt="">
+          <p class="text-center lg:text-lg">HB BATERIAS LTDA, Av. Mendonça Júnior, 654 - Gruta de Lourdes, Maceió - AL,
+            57052-480</p>
+        </div>
       </div>
-</div>
+    </div>
+  </div>
 
+  <footer class="w-full h-[150px] bg-[#202992] mt-[250px] border-b-[4px] border-[#FCEE05] text-[#CEC7BF] justify-center items-center flex flex-col text-center "><img src="/assets/logo_header.png" alt="" class="w-28 drop-shadow-[5px_7px_5px_rgba(0,0,0,0.50)] mb-5">Copyright © 2024 - HB Baterias. CNPJ: 00.000.000/0001-00</footer>
 
-  
-
-    <div class=" h-[100vh] pt-10 flex justify-center text-white" id="test2"></div>
-    
-    
 </body>
 <script>
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
     });
+  });
 </script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 <script>
-    $(document).ready(function(){
-      $('.slider').slick({
-        dots: true,
-        infinite: true,
-        arrows: false,
-        speed: 500,
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        responsive: [
-          {
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 1,
-            },
+  $(document).ready(function () {
+    $('.slider').slick({
+      dots: true,
+      infinite: true,
+      arrows: false,
+      speed: 500,
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 3000,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
           },
-          {
-            breakpoint: 600,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 1,
-            },
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
           },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              centerMode: true
-            },
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            centerMode: true
           },
-        ],
-      });
+        },
+      ],
     });
+  });
 
-    
+
 </script>
 
 <script>
-  $(document).ready(function(){
+  $(document).ready(function () {
     $('.contact-slider').slick({
       dots: true,
       infinite: true,
@@ -255,7 +304,7 @@
     });
   });
 
-  
+
 </script>
 
 
