@@ -36,15 +36,14 @@
     </style>
 </head>
 
-<body>
-    <header class="w-full bg-[#202992] fixed flex justify-around items-center py-3 text-white">
-        <a href="#test1"><img src="/assets/logo_header.png" alt="" class="w-28"></a>
-        <button class="px-6 py-1 bg-[#FCEE05] rounded drop-shadow-[5px_7px_5px_rgba(0,0,0,0.50)] text-[#202992] ">Peça
-            Agora!</button>
-        <nav class="hidden sm:flex justify-around items-center gap-8">
-            <a href="#test2"> QUEM SOMOS?</a>
-            <a href="#test3"> COMO FUNCIONA??</a>
-            <h1>CONTATOS</h1>
+<body> 
+    <header class="w-full bg-[#202992] fixed flex justify-evenly items-center py-4 text-white border-b-2 border-[#FCEE05] z-50">
+        <a href="#test1"><img src="/assets/logo_header.png" alt="" class="w-28 drop-shadow-[5px_7px_5px_rgba(0,0,0,0.50)]"></a>
+        <button class="px-6 py-1 bg-[#FCEE05] rounded drop-shadow-[5px_7px_5px_rgba(0,0,0,0.50)] text-[#202992] text-xl font-bold" style="font-family: Roboto Condensed;">Peça Agora!</button>
+        <nav class="hidden sm:flex justify-around items-center gap-10 text-xl" style="font-family: Roboto Condensed;">
+            <a href="#test2">Como Funciona?</a>
+            <a href="#test3">Quem Somos?</a>
+            <a href="#test3">Contatos</a>
         </nav>
     </header>
 
@@ -74,11 +73,10 @@
             </div>
           </div>
     </div>
-    
-    
 
     <div class=" pt-10 flex justify-center text-white" id="test2"></div>
-    <div class="h-[100vh] pt-14 flex justify-center text-white" id="test3">test 3</div>
+    <div class="h-[100vh] pt-32 flex justify-center text-black" id="test3">test 3</div>
+    
 </body>
 <script>
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -91,8 +89,8 @@
     });
 </script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-  <script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script>
     $(document).ready(function(){
       $('.slider').slick({
         dots: true,
@@ -129,6 +127,6 @@
         ],
       });
     });
-  </script>
+</script>
 
 </html>
