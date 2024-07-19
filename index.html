@@ -217,64 +217,35 @@
   </div>
   <!-- MODAL CART -->
   <div id="cart-modal" class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden">
-    <div class="bg-white p-6 rounded-md min-w-[90%] md:min-w-[600px] overflow-auto"  style="font-family:Barlow;">
+    <div class="bg-white p-6 rounded-md min-w-[90%] md:min-w-[600px] overflow-auto" style="font-family:Barlow;">
         <h2 class="text-center font-bold text-2xl mb-4">Peça Agora!</h2>
 
+        <p class="font-bold mt-4">Nome:</p>
+        <input type="text" placeholder="Digite seu nome completo..." id="name" class="w-full border-2 p-1 rounded my-1">
 
-<P class="font-bold mt-4">Nome:</P>
-        <input
-        type="text"
-        placeholder="Digite seu nome completo..."
-        id="name"
-        class="w-full border-2 p-1 rounded my-1">
-
-        <P class="font-bold mt-4">Celular: </P>
-        <input
-        type="tel"
-        placeholder="Digite seu nome completo..."
-        id="phone"
-        class="w-full border-2 p-1 rounded my-1">
-
-
+        <p class="font-bold mt-4">Celular:</p>
+        <input type="tel" placeholder="Digite seu nome completo..." id="phone" class="w-full border-2 p-1 rounded my-1">
 
         <div class="flex space-x-4">
-
-          <div class="flex flex-col">
-
-            <P class="font-bold mt-4">Modelo: </P>
-        <input
-        type="text"
-        placeholder="Digite o modelo..."
-        id="modelo"
-        class="w-full border-2 p-1 rounded my-1">
-          </div>
-
-          <div class="flex flex-col">
-            <P class="font-bold mt-4">Versão: </P>
-        <input
-        type="text"
-        placeholder="Digite a versão..."
-        id="versao"
-        class="w-full border-2 p-1 rounded my-1">
-          </div>
-
-          <div class="flex flex-col">
-            <P class="font-bold mt-4">Ano: </P>
-            <input
-            type="number"
-            placeholder="Digite o ano..."
-            id="year"
-            class="w-full border-2 p-1 rounded my-1">
-          </div>
+            <div class="flex flex-col">
+                <p class="font-bold mt-4">Modelo:</p>
+                <input type="text" placeholder="Digite o modelo..." id="modelo" class="w-full border-2 p-1 rounded my-1">
+            </div>
+            <div class="flex flex-col">
+                <p class="font-bold mt-4">Versão:</p>
+                <input type="text" placeholder="Digite a versão..." id="versao" class="w-full border-2 p-1 rounded my-1">
+            </div>
+            <div class="flex flex-col">
+                <p class="font-bold mt-4">Ano:</p>
+                <input type="number" placeholder="Digite o ano..." id="year" class="w-full border-2 p-1 rounded my-1">
+            </div>
         </div>
-        
 
         <div class="flex items-center justify-between mt-10 w-full">
-
             <button id="close-modal-btn">Fechar</button>
-
-            <button id="checkout-btn" class="bg-[#FCEE05] px-4 py-1 rounded font-bold flex gap-1 text-[#202992] hover:bg-[#202992] hover:text-[#FCEE05] duration-500"> <img src="./assets/whatsapp (2).png" alt="whatsapp" class="w-5 h-5"> Finalizar Pedido</button>
-
+            <button id="checkout-btn" type="button" class="bg-[#FCEE05] px-4 py-1 rounded font-bold flex gap-1 text-[#202992] hover:bg-[#202992] hover:text-[#FCEE05] duration-500">
+                <img src="./assets/whatsapp (2).png" alt="whatsapp" class="w-5 h-5"> Finalizar Pedido
+            </button>
         </div>
     </div>
 </div>
@@ -380,31 +351,46 @@
 </script>
 
 <script>
-  const cartBtn = document.querySelectorAll(".cart-btn")
-  const cartModal = document.getElementById("cart-modal")
-  const closeModalBtn = document.getElementById("close-modal-btn")
-  const body = document.getElementById("body")
-   // Abrir o modal do carrinho
+  const nome = document.getElementById("name");
+  const telefone = document.getElementById("phone");
+  const modelo = document.getElementById("modelo");
+  const versao = document.getElementById("versao");
+  const ano = document.getElementById("year");
+  const finalizar = document.getElementById("checkout-btn");
+  const cartBtn = document.querySelectorAll(".cart-btn");
+  const cartModal = document.getElementById("cart-modal");
+  const closeModalBtn = document.getElementById("close-modal-btn");
+  const body = document.getElementById("body");
+
+  // Abrir o modal do carrinho
   cartBtn.forEach(btn => {
-      btn.addEventListener("click", function(){
-          cartModal.style.display = "flex"
-          body.style.overflow = "hidden"
-      })
-  })
+      btn.addEventListener("click", function() {
+          cartModal.style.display = "flex";
+          body.style.overflow = "hidden";
+      });
+  });
 
-  //fechar moral carrinho
-  cartModal.addEventListener("click", function(event){
-      if(event.target === cartModal){
-          cartModal.style.display = "none"
-          body.style.overflow = "auto"
+  // Fechar modal carrinho
+  cartModal.addEventListener("click", function(event) {
+      if (event.target === cartModal) {
+          cartModal.style.display = "none";
+          body.style.overflow = "auto";
       }
-  })
+  });
 
-  //fechar no botão FECHAR
-  closeModalBtn.addEventListener("click", function(){
-      cartModal.style.display = "none"
-      body.style.overflow = "auto"
-  })
+  // Fechar no botão FECHAR
+  closeModalBtn.addEventListener("click", function() {
+      cartModal.style.display = "none";
+      body.style.overflow = "auto";
+  });
+
+  // Finalizar pedido e enviar mensagem pelo WhatsApp
+  finalizar.addEventListener("click", function() {
+      const mensagem = encodeURIComponent(`*NOME:* ${nome.value}\n\nTELEFONE: ${telefone.value}\nMODELO: *${modelo.value}*\nVERSÃO: *${versao.value}*\nANO: *${ano.value}*\n*Obrigado pela preferência!*`);
+      const numeroWhatsApp = "82987450397";
+      
+      window.open(`https://wa.me/${numeroWhatsApp}?text=${mensagem}`, "_blank");
+  });
 </script>
 
 
