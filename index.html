@@ -41,18 +41,24 @@
       margin: 0 auto;
       padding: 0 auto;
     }
+
+    .modal {
+      
+      background: rgb(255,248,136);
+      background: linear-gradient(0deg, rgba(252,238,5,1) -20%, rgba(35,42,134,1) 40%);
+    }
   </style>
   <title>HB Baterias</title>
 
 </head>
 
-<body>
+<body id="body">
   <header
     class="w-full bg-[#202992] fixed flex justify-evenly items-center py-4 text-white border-b-2 border-[#FCEE05] z-50">
     <a href="#test1"><img src="/assets/logo_header.png" alt=""
         class="w-28 drop-shadow-[5px_7px_5px_rgba(0,0,0,0.50)]"></a>
     <button
-      class="px-6 py-1 bg-[#FCEE05] rounded drop-shadow-[5px_7px_5px_rgba(0,0,0,0.50)] text-[#202992] text-xl font-bold"
+      class="cart-btn px-6 py-1 bg-[#FCEE05] rounded drop-shadow-[5px_7px_5px_rgba(0,0,0,0.50)] text-[#202992] text-xl font-bold"
       style="font-family: Roboto Condensed;">Peça Agora!</button>
     <nav class="hidden sm:flex justify-around items-center gap-10 text-xl" style="font-family: Roboto Condensed;">
       <a href="#test2">Como Funciona?</a>
@@ -71,7 +77,7 @@
         <h2 class="text-2xl font-bold md:text-3xl text-stroke-3 text-[#FCEE05]" style="font-family: barlow;">Em até 10x
           sem juros.</h2>
         <button
-          class="px-6 py-1 h-12 w-48 font-bold bg-[#FCEE05] rounded drop-shadow-[5px_7px_5px_rgba(0,0,0,0.50)] text-[#202992] mt-6 text-2xl hover:bg-[#202992] hover:text-[#FCEE05] duration-500 "
+          class="cart-btn px-6 py-1 h-12 w-48 font-bold bg-[#FCEE05] rounded drop-shadow-[5px_7px_5px_rgba(0,0,0,0.50)] text-[#202992] mt-6 text-2xl hover:bg-[#202992] hover:text-[#FCEE05] duration-500 "
           style="font-family:Roboto Condensed;">Peça
           Agora!</button>
       </div>
@@ -124,7 +130,7 @@
     <div class="m-0">
       <img src="/assets/celular.png" alt="">
       <button
-        class="px-6 py-1 h-12 w-52 font-bold bg-[#FCEE05] rounded drop-shadow-[5px_7px_5px_rgba(0,0,0,0.50)] text-[#202992] text-2xl hover:bg-[#202992] hover:text-[#FCEE05] duration-500 "
+        class="cart-btn px-6 py-1 h-12 w-52 font-bold bg-[#FCEE05] rounded drop-shadow-[5px_7px_5px_rgba(0,0,0,0.50)] text-[#202992] text-2xl hover:bg-[#202992] hover:text-[#FCEE05] duration-500 "
         style="font-family:Roboto Condensed;">Peça
         Agora!</button>
     </div>
@@ -209,6 +215,72 @@
       </div>
     </div>
   </div>
+  <!-- MODAL CART -->
+  <div id="cart-modal" class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden">
+    <div class="bg-white p-6 rounded-md min-w-[90%] md:min-w-[600px] overflow-auto"  style="font-family:Barlow;">
+        <h2 class="text-center font-bold text-2xl mb-4">Peça Agora!</h2>
+
+
+<P class="font-bold mt-4">Nome:</P>
+        <input
+        type="text"
+        placeholder="Digite seu nome completo..."
+        id="name"
+        class="w-full border-2 p-1 rounded my-1">
+
+        <P class="font-bold mt-4">Celular: </P>
+        <input
+        type="tel"
+        placeholder="Digite seu nome completo..."
+        id="phone"
+        class="w-full border-2 p-1 rounded my-1">
+
+
+
+        <div class="flex space-x-4">
+
+          <div class="flex flex-col">
+
+            <P class="font-bold mt-4">Modelo: </P>
+        <input
+        type="text"
+        placeholder="Digite o modelo..."
+        id="modelo"
+        class="w-full border-2 p-1 rounded my-1">
+          </div>
+
+          <div class="flex flex-col">
+            <P class="font-bold mt-4">Versão: </P>
+        <input
+        type="text"
+        placeholder="Digite a versão..."
+        id="versao"
+        class="w-full border-2 p-1 rounded my-1">
+          </div>
+
+          <div class="flex flex-col">
+            <P class="font-bold mt-4">Ano: </P>
+            <input
+            type="number"
+            placeholder="Digite o ano..."
+            id="year"
+            class="w-full border-2 p-1 rounded my-1">
+          </div>
+        </div>
+        
+
+        <div class="flex items-center justify-between mt-10 w-full">
+
+            <button id="close-modal-btn">Fechar</button>
+
+            <button id="checkout-btn" class="bg-[#FCEE05] px-4 py-1 rounded font-bold flex gap-1 text-[#202992] hover:bg-[#202992] hover:text-[#FCEE05] duration-500"> <img src="./assets/whatsapp (2).png" alt="whatsapp" class="w-5 h-5"> Finalizar Pedido</button>
+
+        </div>
+    </div>
+</div>
+<!-- FIM MODAL CART -->
+
+
 
   <footer class="w-full h-[150px] bg-[#202992] mt-[250px] border-b-[4px] border-[#FCEE05] text-[#CEC7BF] justify-center items-center flex flex-col text-center "><img src="/assets/logo_header.png" alt="" class="w-28 drop-shadow-[5px_7px_5px_rgba(0,0,0,0.50)] mb-5">Copyright © 2024 - HB Baterias. CNPJ: 00.000.000/0001-00</footer>
 
@@ -305,6 +377,34 @@
   });
 
 
+</script>
+
+<script>
+  const cartBtn = document.querySelectorAll(".cart-btn")
+  const cartModal = document.getElementById("cart-modal")
+  const closeModalBtn = document.getElementById("close-modal-btn")
+  const body = document.getElementById("body")
+   // Abrir o modal do carrinho
+  cartBtn.forEach(btn => {
+      btn.addEventListener("click", function(){
+          cartModal.style.display = "flex"
+          body.style.overflow = "hidden"
+      })
+  })
+
+  //fechar moral carrinho
+  cartModal.addEventListener("click", function(event){
+      if(event.target === cartModal){
+          cartModal.style.display = "none"
+          body.style.overflow = "auto"
+      }
+  })
+
+  //fechar no botão FECHAR
+  closeModalBtn.addEventListener("click", function(){
+      cartModal.style.display = "none"
+      body.style.overflow = "auto"
+  })
 </script>
 
 
