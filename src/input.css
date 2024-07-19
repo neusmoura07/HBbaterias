@@ -10,3 +10,33 @@ header{
     background: rgb(32,41,146);
     background: linear-gradient(180deg, rgba(32,41,146,1) 80%, rgba(252,238,5,1) 100%);
 }
+
+.slick-slide img {
+    display: block;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.card {
+    height: 185px !important;
+    width: 185px !important;
+
+}
+
+@media (min-width: 1024px) {
+    .card {
+        height: 210px !important;
+        width: 300px !important;
+    }
+}
+
+.slick-slide div {
+    display: block;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.modal {
+    background: rgb(255,248,136);
+    background: linear-gradient(0deg, rgba(252,238,5,1) -20%, rgba(35,42,134,1) 40%);
+}
