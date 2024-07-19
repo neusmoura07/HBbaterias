@@ -30,6 +30,13 @@ header{
     }
 }
 
+@media (max-width: 348px) {
+    .card {
+        height: 200px !important;
+        width: 180px !important;
+    }
+}
+
 .slick-slide div {
     display: block;
     margin: 0 auto;
