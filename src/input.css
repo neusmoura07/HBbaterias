@@ -47,3 +47,13 @@ header{
     background: rgb(255,248,136);
     background: linear-gradient(0deg, rgba(252,238,5,1) -20%, rgba(35,42,134,1) 40%);
 }
+
+.swiper-slide {
+    width: 300px; /* Ajuste o tamanho dos slides conforme necessário */
+    height: auto; /* Para manter a altura automática */
+  }
+  .swiper-container {
+    width: 100%; /* Largura do contêiner do Swiper */
+    max-width: 800px; /* Largura máxima do carrossel */
+    margin: 0 auto; /* Centraliza o contêiner */
+  }
